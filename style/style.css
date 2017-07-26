@@ -44,50 +44,50 @@
 .third-image.show {
   opacity: 1;
 }
-// td, th {
-//   vertical-align: middle !important;
-//   text-align: center !important;
-// }
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
 
-// .input-group {
-//   margin: 20px 0px;
-// }
+.input-group {
+  margin: 20px 0px;
+}
 
-// svg {
-//   height: 150px;
-// }
+svg {
+  height: 150px;
+}
 
-// td:first-of-type, td:first-of-type > div {
-//   height: 200px;
-//   width: 250px;
-// }
-// .form{
-// 	height:100px;
-// 	// background: url("background.jpeg") center top no-repeat;
-// 	// background-size: 100%;
-// }
-// form{
-// 	padding-top: 60px;
-// }
-// .tbodo{
-//   overflow: scroll;
-//   height:500px;
+td:first-of-type, td:first-of-type > div {
+  height: 200px;
+  width: 250px;
+}
+.form{
+	height:100px;
+	// background: url("background.jpeg") center top no-repeat;
+	// background-size: 100%;
+}
+form{
+	padding-top: 60px;
+}
+.tbodo{
+  overflow: scroll;
+  height:500px;
 
-// }
+}
 
-// @media screen and (max-width: 375px){
-//   svg{
-//     height: 45px !important;
-//   }
-//   td:first-of-type{
-//     height:0 !important;
-//   }
-//   table td{
-//     padding:5px !important;
-//     font-size: 12px !important;
-//   }
-//   .form-control{
-//     padding: .375rem .55rem !important;
-//   }
+@media screen and (max-width: 375px){
+  svg{
+    height: 45px !important;
+  }
+  td:first-of-type{
+    height:0 !important;
+  }
+  table td{
+    padding:5px !important;
+    font-size: 12px !important;
+  }
+  .form-control{
+    padding: .375rem .55rem !important;
+  }
   
-//   }
+  }
