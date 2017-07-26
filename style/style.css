@@ -1,3 +1,49 @@
+.background-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Styles for the alternating / transition effect. */
+.toggle-image {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 800px;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Styles for the specific images. */
+.first-image {
+  background-image: url('background.jpeg');  
+  z-index: -3;
+  opacity: 0;
+}
+
+.second-image {
+  background-image: url('background1.jpg');
+  z-index: -2;
+  opacity: 0;
+}
+
+.third-image {
+  background-image: url('background2.jpg');
+  z-index: -1;
+  opacity: 0;
+}
+
+.first-image.show {
+  opacity: 1;
+}
+
+.second-image.show {
+  opacity: 1;
+}
+
+.third-image.show {
+  opacity: 1;
+}
 td, th {
   vertical-align: middle !important;
   text-align: center !important;
@@ -15,3 +61,33 @@ td:first-of-type, td:first-of-type > div {
   height: 200px;
   width: 250px;
 }
+.form{
+	height:100px;
+	// background: url("background.jpeg") center top no-repeat;
+	// background-size: 100%;
+}
+form{
+	padding-top: 60px;
+}
+.tbodo{
+  overflow: scroll;
+  height:500px;
+
+}
+
+@media screen and (max-width: 375px){
+  svg{
+    height: 45px !important;
+  }
+  td:first-of-type{
+    height:0 !important;
+  }
+  table td{
+    padding:5px !important;
+    font-size: 12px !important;
+  }
+  .form-control{
+    padding: .375rem .55rem !important;
+  }
+  
+  }

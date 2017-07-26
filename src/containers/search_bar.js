@@ -30,9 +30,10 @@ import { fetchWeather } from '../actions/index';
 
 	render() {
 		return (
+			<div className="form">
 			<form onSubmit={this.onFormSubmit} className="input-group">
 				<input 
-					placeholder="Get a five-day forecast in your favorite cities"
+					placeholder="Get forecast in your favorite cities"
 					className="form-control"
 					value={this.state.term}
 					onChange={this.onInputChange} />
@@ -42,6 +43,7 @@ import { fetchWeather } from '../actions/index';
 
 				</span>
 			</form>
+			</div>
 			);
 	}
 }

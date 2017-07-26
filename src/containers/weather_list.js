@@ -12,20 +12,26 @@ class WeatherList extends Component {
 		const { lon, lat } = cityData.city.coord;
 		
 		return (
-			<tr key={name}>
-				<td><GoogleMaps lon={lon} lat={lat} /></td>
-
-				<td><Chart data={temps} color="orange" units="K" />  </td>
-				<td><Chart data={pressure} color="green" units="hPa" /> </td>
-				<td><Chart data={humidity} color="blue" units="%" /></td>
+			<tr  key={name} >
+				
+				<td className="hidden-xs"><GoogleMaps  lon={lon} lat={lat} /></td>
+				<td className="visible-xs col-sm-4">{name}</td>
+				<td><Chart className="col-sm-4" data={temps} color="orange" units="K" />  </td>
+				<td><Chart className="col-sm-4" data={pressure} color="green" units="hPa" /> </td>
+				<td><Chart className="col-sm-4" data={humidity} color="blue" background-color="white" units="%" /></td>
 			</tr>
 			)
 
 	}
+	renderCityName(cityData){
+		const name = cityData.city.name;
+		return name;
+	}
 	render(){
 		return(
-			<table className="table table-hover">
+			<table className="col-sm-12 table table-hover">
 				<thead>
+					
 					<tr>
 						<th>City</th>
 						<th>Temperature (K)</th>
@@ -33,8 +39,10 @@ class WeatherList extends Component {
 						<th>Humidity (%)</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody >
+				
 				{this.props.weather.map(this.renderWeather)}
+				
 
 				</tbody>
 
